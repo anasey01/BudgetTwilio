@@ -1,0 +1,28 @@
+{
+    "name": "oluseyi/budgettwilio",
+    "description": "A bootstrap twilio configuration package",
+    "authors": [
+        {
+            "name": "Oluseyi Anani",
+            "email": "anasey@outlook.com"
+        }
+    ],
+    "require": {
+        "twilio/sdk": "^5.42"
+    },
+    "autoload":{
+        "psr-4": {
+            "Oluseyi\\BudgetTwilio\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel" : {
+            "providers": [
+                "Oluseyi\\BudgetTwilio\\BudgetTwilioServiceProvider"
+            ],
+            "aliases": {
+                "BudgetTwilio": "Oluseyi\\BudgetTwilio\\Facades\\BudgetTwilio"
+            }
+        }
+    }
+}
